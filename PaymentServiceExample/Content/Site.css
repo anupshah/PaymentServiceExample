@@ -1,0 +1,43 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+body, h1, h2, h3, h4, h4, h6 { font-family: "Open sans", Helvetica, sans-serif; }
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+*/
+/* commenting out above because it is aggressive change by ASP.NET to bootstrap defaults */
+
+.input-validation-error { border-color: #c33; }
+
+.take-payment {margin-top: 20px;background: #f5f5f5; padding:10px; box-shadow: 0 0 10px #aaa; border: 1px solid #ccc; border-radius: 4px; }
+
+/* for CVV turn off number spinner as it doesn't make sense */
+.take-payment input[type=number] { -moz-appearance:textfield; }
+.take-payment input[type=number]::-webkit-inner-spin-button,
+.take-payment input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+.take-payment .expiry label { display: block; }
+.take-payment .expiry select, .take-payment .expiry-msg { display: inline-block; width: 49.25%; }
+.take-payment .form-group.expiry { margin-bottom: 0; }
+.take-payment .form-group.expiry .field-validation-error { margin-bottom: 15px; }
+.take-payment .cvv { width: 4em; }
